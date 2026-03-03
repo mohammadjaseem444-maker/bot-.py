@@ -1,2 +1,2 @@
-# bot-.py
+# bot.py
 Automatic bots
