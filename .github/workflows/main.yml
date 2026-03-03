@@ -1,0 +1,21 @@
+name: Jaseem-Bhai-Auto-Bot
+on:
+  schedule:
+    - cron: '0 */4 * * *' # Har 4 ghante mein apne aap chalega
+  workflow_dispatch: # Button daba kar bhi chala sakte ho
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - name: Install Dependencies
+        run: pip install requests
+      - name: Run Bot
+        run: python bot.py
+        
