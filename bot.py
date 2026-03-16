@@ -1,2 +1,0 @@
-# bot.py
-Automatic bots
